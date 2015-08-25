@@ -1,0 +1,57 @@
+'(
+(dtype article)
+(authors (Fabien Hervouet) (Benjamin Gaussorgues))
+(title 
+  (How to write Zino documents) 
+  (Everything you always wanted to know) 
+  (but never asked...))
+(abstract ())
+(date 02 09 2008)
+
+(toc)
+
+
+(section (First Section) 
+  (Hey here is the first section of this document... What do you say about that ?
+You can               do what you want,      because spaces and new lines are not
+taken into account.)
+
+(section (First subsection) 
+  (Here it is too. The first subsection is only there because of its 
+    '(section <title> <content>) command in a section bloc in the document. This is 
+      how you can structure your ideas.))
+
+(section (Second subsection) 
+  (Let's make a little itemization on some interesting features of (zino) :
+    (items (Syntax easier than in (latex) documents)
+       (Documents are more readable while editing)
+       (It is based on the LISP (ref 1) syntax)
+       (It is a french project by two students in Informatics (not computer science, 
+         but it's another discussion...))
+       (Don't have many other ideas, but I'll think about it)))))
+
+
+(section (Second Section) 
+  (And now, tables. Tables are always useful, and with Zino it is very easy to create 
+    them. For instance, if you just want to compare three things, you can do it this 
+    way :
+    (table () (Windows) (MacOS) (Linux)
+      (Zino works on) (Yes) (Yes) (Yes)))
+      (section (Pouet tagada tsouin
+         et merde...) (Et là le contenu de merde c'est ça ??)))
+
+
+(section (Third Section) 
+  (Why not use footnotes (footnote (Footnotes are really great for those who don't want
+    to be too verbose, but want to specify nevertheless.)) ?) 
+  (Moreover, we can insert pictures just with the '(img <file-path>) command. This
+    command allows to insert JPG, PNG, PS & PDF files.)
+  ((zino) speaks also the mathematical language, don't worry. The notation is prefixed
+    just like in LISP. So if you want to write a complex mathematical expression like
+    this (sum i 1 (infinite) (div (exp x 2) (ind y i))), you can.))
+
+
+(references (Wikipedia (href fr.wikipedia.org/wiki/Accueil))
+            (CLISP (href www.gnu.org/software/clisp/))
+            ((Mémento Latex) (Christophe Jacquet) 2007 Eyrolles))
+)

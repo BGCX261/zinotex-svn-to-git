@@ -1,0 +1,3 @@
+
+("document type is ARTICLE" NIL NIL NIL NIL NIL (NIL (NIL) (NIL)) (NIL (NIL))
+ (NIL NIL NIL) NIL) 
